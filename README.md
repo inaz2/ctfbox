@@ -2,6 +2,7 @@
 
 Docker image including ctf tools
 
+* build-essential, gdb, strace, ltrace, netcat
 * [socat](http://www.dest-unreach.org/socat/)
 * [nmap](https://nmap.org/)
 * [rp++](https://github.com/0vercl0k/rp)
