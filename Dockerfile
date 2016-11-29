@@ -12,7 +12,8 @@ RUN wget https://github.com/0vercl0k/rp/releases/download/v1/rp-lin-x64 \
     && mv rp-lin-x64 rp-lin-x86 /usr/local/bin
 
 # peda
-RUN git clone https://github.com/longld/peda.git ~/peda \
+RUN apt-get install -y nasm \
+    && git clone https://github.com/longld/peda.git ~/peda \
     && echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 # angr, z3py
