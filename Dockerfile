@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt-get update \
     && apt-get -y upgrade \
-    && apt-get -y install build-essential gcc-multilib g++-multilib gdb strace ltrace netcat vim-tiny less wget git socat nmap \
+    && apt-get -y install build-essential gcc-multilib g++-multilib binutils-multiarch gdb strace ltrace netcat vim-tiny less wget git socat nmap \
     && apt-get clean
 
 # rp++
